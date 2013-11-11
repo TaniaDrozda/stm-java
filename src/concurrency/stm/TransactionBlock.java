@@ -1,4 +1,4 @@
-package concurrency.stm;
+package stm;
 
 /**
  * @author mishadoff

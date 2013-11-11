@@ -1,6 +1,6 @@
-package concurrency.test;
+package test;
 
-import concurrency.stm.Ref;
+import stm.Ref;
 
 public class Account {
     private Ref<Long> moneyRef;

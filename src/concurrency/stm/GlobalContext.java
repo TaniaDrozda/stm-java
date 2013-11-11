@@ -1,4 +1,4 @@
-package concurrency.stm;
+package stm;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -16,7 +16,7 @@ public final class GlobalContext extends Context {
     }
 
     @Override
-    <T> T get(Ref<T> ref) {
+    <T> T get(stm.Ref<T> ref) {
         return ref.content.value;
     }
 }

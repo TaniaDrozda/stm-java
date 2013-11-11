@@ -1,8 +1,8 @@
-package concurrency.test;
+package test;
 
-import concurrency.stm.STM;
-import concurrency.stm.Transaction;
-import concurrency.stm.TransactionBlock;
+import stm.STM;
+import stm.Transaction;
+import stm.TransactionBlock;
 
 /**
  * @author mishadoff

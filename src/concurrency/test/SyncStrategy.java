@@ -1,4 +1,4 @@
-package concurrency.test;
+package test;
 
 /**
  * @author mishadoff

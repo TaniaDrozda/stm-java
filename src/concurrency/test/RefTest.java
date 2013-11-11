@@ -1,6 +1,6 @@
-package concurrency.test;
+package test;
 
-import concurrency.stm.GlobalContext;
+import stm.GlobalContext;
 
 /**
  * @author mishadoff

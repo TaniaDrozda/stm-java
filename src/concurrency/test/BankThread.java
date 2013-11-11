@@ -1,4 +1,4 @@
-package concurrency.test;
+package test;
 
 public class BankThread implements Runnable {
     private Bank bank;

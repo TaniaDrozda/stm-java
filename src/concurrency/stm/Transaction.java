@@ -1,4 +1,4 @@
-package concurrency.stm;
+package stm;
 
 import java.util.HashMap;
 import java.util.HashSet;
@@ -41,14 +41,15 @@ public final class Transaction extends Context{
         }
     }
 
-    boolean commit() {
+    boolean commit() throws CommitException {
         synchronized (STM.commitLock) {
             // validation
             boolean isValid = true;
             for (Ref ref : inTxMap.keySet()) {
                 if (ref.content.revision != version.get(ref)) {
                     isValid = false;
-                    break;
+                    //break;
+                    throw new CommitException("Invalid revision");
                 }
             }
 
